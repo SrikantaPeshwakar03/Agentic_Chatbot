@@ -1,0 +1,33 @@
+# Core NLP + LLM
+transformers
+accelerate
+sentence-transformers
+torch
+bitsandbytes           # For 4-bit/8-bit quantized models (optional but useful)
+auto-gptq              # For GPTQ quantized models (if using)
+einops                 # Needed for some LLaMA models
+scipy
+
+# Vector DB
+faiss-cpu              # For local vector store (or faiss-gpu if using GPU)
+chromadb               # (optional alternative to FAISS)
+
+# Document Parsing
+python-docx
+python-pptx
+pymupdf                # For PDF parsing (PyMuPDF)
+pandas                 # For CSV
+markdown2              # For parsing .md files
+beautifulsoup4         # Optional: text cleaning
+
+# UI
+gradio                 # Chatbot interface
+# flask                # Optional if using Flask instead of Gradio
+
+# Utilities
+tqdm
+nltk                   # Optional: for tokenization or sentence splitting
+scikit-learn           # Optional: for cosine similarity, etc.
+
+# Optional: Model Download/Loading Helpers
+huggingface_hub
