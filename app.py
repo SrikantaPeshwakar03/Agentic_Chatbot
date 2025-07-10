@@ -2,7 +2,7 @@ import gradio as gr
 from agents.ingestion_agent import ingest_documents
 from main import run_agent_pipeline
 from config import MODEL_NAME
-
+# this function is used to take question from the user
 def ask_question(query, files):
     if files:
         file_paths = [f.name for f in files]
@@ -14,7 +14,7 @@ def ask_question(query, files):
     if final_msg:
         answer = final_msg["payload"]["response"]
     else:
-        answer = "❌ Failed to generate an answer. Please check logs or model status."
+        answer = "Failed to generate an answer. Please check logs or model status."
 
     return answer, ""
 
@@ -54,7 +54,7 @@ with gr.Blocks(css="style.css") as demo:
     submit_btn.click(fn=user_chat_handler, inputs=[chatbot, msg_input, file_upload], outputs=[chatbot, msg_input, file_upload])
     file_upload.change(fn=show_uploaded_files, inputs=file_upload, outputs=file_list_display)
 
-    gr.Markdown("⚡ Powered by Ollama + Agentic RAG")
+    gr.Markdown("Powered by Ollama + Agentic RAG")
 
 if __name__ == "__main__":
     demo.launch()

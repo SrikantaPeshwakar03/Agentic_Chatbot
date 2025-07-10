@@ -18,7 +18,7 @@ def llm_response_agent(context_message: Message) -> Message:
     })
 
     if response.status_code != 200:
-        print("❌ LLM generation failed:", response.text)
+        print("LLM generation failed:", response.text)
         return Message(
             sender="LLMResponseAgent",
             receiver="SourceAttributionAgent",

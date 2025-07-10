@@ -4,6 +4,7 @@ from agents.retrieval_agent import retrieve_agent
 from agents.llmresponse_agent import llm_response_agent
 from agents.source_agent import source_attribution_agent
 from agents.memory_agent import memory_agent
+#integrates all the Agents
 
 def run_agent_pipeline(user_query: str):
     ctx = ContextManager()
