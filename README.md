@@ -22,18 +22,18 @@ This is an **Agent-based Retrieval-Augmented Generation (RAG)** chatbot powered 
 git clone https://github.com/SrikantaPeshwakar03/Agentic_Chatbot.git
 cd agentic-chatbot
 ```
-## 2. Create & Activate Virtual Environment (Recommended)
+### 2. Create & Activate Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
 source venv/bin/activate         # On Linux/Mac
 venv\Scripts\activate            # On Windows
 ```
-## 3. Install Dependencies
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-## 4. Download Ollama
+### 4. Download Ollama
 - Download Ollama from https://ollama.com/download
 - After Downloading, open Command Prompt and run:
 ```bash
@@ -41,10 +41,13 @@ ollama run llama3.2
 ```
 - Make sure the llama3.2 is running locally while you run the Chatbot
 
-## 5. Running the App
+### 5. Running the App
 
 Once dependencies are installed and Ollama is set up, you can run the chatbot using:
 
 ```bash
 python app.py
 ```
+
+## Video Access Link
+https://www.loom.com/share/a1f04a6fe6f3465883ad6812cf81df05
